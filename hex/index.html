@@ -1,0 +1,144 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Prototype" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <title>Contrast – Hex</title>
+    <link rel="stylesheet" href="../assets/css/screen.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700" rel="stylesheet">
+
+    <meta name="description" content="A macOS app for quick access to WCAG color contrast ratios" />
+
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/screen.css">
+
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="Contrast for UI">
+    <meta itemprop="description" content="A macOS app for quick access to WCAG color contrast ratios.">
+    <meta itemprop="image" content="http://mds-assets.s3.amazonaws.com/contrast/contrast-card-v0.2.jpg">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@mds">
+    <meta name="twitter:title" content="Contrast for UI">
+    <meta name="twitter:description" content="A macOS app for quick access to WCAG color contrast ratios.">
+    <meta name="twitter:creator" content="@mds">
+    <meta name="twitter:image:src" content="http://mds-assets.s3.amazonaws.com/contrast/contrast-card-v0.2.jpg">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Contrast for UI" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://usecontrast.com" />
+    <meta property="og:image" content="http://mds-assets.s3.amazonaws.com/contrast/contrast-card-v0.2.jpg" />
+    <meta property="og:description" content="A macOS app for quick access to WCAG color contrast ratios." />
+    <meta property="og:site_name" content="Contrast for UI" />
+
+  </head>
+
+  <body class="contrast-page-interior contrast-page-press">
+
+    <div class="contrast-wrapper">
+
+      <nav>
+        <ul>
+          <li><a class="contrast-logo" href="/">
+                <svg><use xlink:href="../assets/img/contrast-logo.svg#target"></use></svg>
+                <span>Home</span>
+              </a>
+          </li>
+          <li><a href="/why">Why</a></li>
+          <li><a href="/updates">Updates</a></li>
+          <li><a href="/support">Support</a></li>
+          <li><a href="/guide">Guide</a></li>
+        </ul>
+      </nav>
+
+      <div class="contrast-content">
+
+        <div class="contrast-title">
+          <h1>What the HEX?</h1>
+        </div>
+
+        <blockquote>“My color picker is picking the wrong hex code.”</blockquote>
+        <blockquote>“My hex codes are different than my eye dropper’s selection.”</blockquote>
+        <blockquote>“Each time I choose a color, the hex is slightly different.” </blockquote>
+
+        <p>We’ve heard this many times from many users and have also experienced this ourselves. We feel your pain!</p>
+
+        <p>The short answer is...</p>
+
+        <p><strong>Color spaces on the Mac are difficult to predict between multiple pieces of software, so use the manual hex codes as the fail safe.</strong></p>
+
+        <p>You may see hex code differences between Contrast and your design tool, but this is often created by slightly different color space combinations and/or mathematical rounding differences between software.</p>
+
+        <p>However, if you're choosing both foreground and background colors with the color picker, the score will be correct, even if the hex codes are different than your design tool. Both colors will be rounded and chosen with the same algorithm, which will result in a correct WCAG score.</p>
+
+        <p>The longer answer can be summarized with this <a href="https://twitter.com/esbenlorenzo/status/1234500911822786560?s=21">series of tweets</a>, or by continuing to read below.</p>
+
+        <p>If a color space is set to sRGB then there is more of a possibility that the color picker will be closer to the actual intended hex code, but Apple’s framework for color is 8 bits per channel, which will quite often result in rounding errors of hex codes, even if they’re all in the same color space.</p>
+
+        <p>The rounding errors will be extremely hard to perceive with your eyes, but nonetheless there will be some odd wiggle room that comes from using one piece of software to select colors from another piece of software.</p>
+
+        <p>We are testing a future feature of Contrast that will allow you to set a color space within the settings, but it still has the same rounding error issues that you’ll see in other cross software, color picking solutions.</p>
+
+        <p>It will lessen the differences, but will not solve them completely as there is a deeper fundamental issue at play.</p>
+
+        <p>So now that you’re more informed of the color picking conundrum...</p>
+
+        <p><strong>Use the hex codes from your design tool pasted into the manual inputs of Contrast for the most consistency</strong>.</p>
+
+        <p>If you'd like to continue your quest for color knowledge, <a href="https://www.ricciadams.com/articles/osx-color-conversions/">this article</a> is also helpful.</p>
+
+
+      </div>
+
+      <div class="contrast-headline-cta">
+        <a class="contrast-app-store" href="https://itunes.apple.com/app/contrast/id1254981365?mt=12&uo=6&at=1l3vmtU">
+          <svg><use xlink:href="../assets/img/available-app-store.svg#target"></use></svg>
+          <span>Download on the Mac App Store</span>
+        </a>
+      </div>
+
+      <div class="contrast-footer-wrapper">
+        <footer>
+          <div>
+            <p class="contrast-made-by">Made by <a class="contrast-avatar-link" href="http://twitter.com/soffes">@soffes <img class="contrast-avatar contrast-avatar-soffes" src="../assets/img/soffes.png" alt="soffes" /></a> and <a class="contrast-avatar-link" href="http://twitter.com/mds">@mds <img class="contrast-avatar contrast-avatar-mds" src="../assets/img/mds.png" alt="mds" /></a></p>
+            <nav>
+              <ul>
+                <li><a href="/why">Why</a></li>
+                <li><a href="/press">Press</a></li>
+                <li><a href="/support">Support</a></li>
+                <li><a href="/guide">Guide</a></li>
+              </ul>
+            </nav>
+            <p class="contrast-legal"><span class="copyright">©2017</span> <a href="http://nothingmagical.com">Nothing Magical, Inc</a>.</p>
+          </div>
+        </footer>
+      </div>
+
+  </div>
+
+  <script type="text/javascript" src="../assets/js/jquery-3.1.0.min.js"></script>
+  <script type="text/javascript" src="../assets/js/index.js"></script>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-39514643-8', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+  </body>
+</html>
+
+

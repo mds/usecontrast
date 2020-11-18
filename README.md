@@ -1,2 +1,1 @@
-# usecontrast
-usecontrast.com
+https://usecontrast.com

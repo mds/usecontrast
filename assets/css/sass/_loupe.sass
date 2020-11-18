@@ -1,0 +1,104 @@
+.contrast-loupe
+  width: 20rem
+  height: 20rem
+  clip-path: circle(50% at 50% 50%)
+  position: relative
+  transform: scale(.8) translateX(-2rem)
+  +easeall
+
+  &:hover
+    transform: scale(1.1)
+    +easeall
+
+    li 
+      background: $var-bg-5
+      +easeall
+
+      &:nth-child(59),
+      &:nth-child(79),
+      &:nth-child(99),
+      &:nth-child(119),
+      &:nth-child(139),
+      &:nth-child(159),
+      &:nth-child(179),
+      &:nth-child(199),
+      &:nth-child(219),
+      &:nth-child(239),
+      &:nth-child(259),
+      &:nth-child(279),
+      &:nth-child(299),
+      &:nth-child(319)
+        background: lighten($var-bg-5, 20) !important
+        +easeall
+
+  +small
+    transform: scale(1)
+    width: 20rem
+    height: 20rem
+
+  &:after
+    content: ""
+    display: block
+    position: absolute
+    width: 20rem
+    height: 20rem
+    top: 0
+    left: 0
+    background: transparent
+    box-shadow: inset 0 0 0 .75rem $color-dark
+    border-radius: 50%
+
+    +small
+        width: 20rem
+        height: 20rem
+  
+  ul
+    display: grid
+    grid-template-columns: .5rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem .5rem
+
+  li
+    width: 1rem
+    height: 1rem
+    display: block
+    background: $color-orange
+    box-shadow: 0 0 0 1px $color-white
+    +easeall
+
+    &:nth-child(-n+79),
+    &:nth-child(n+85):nth-child(-n+99),
+    &:nth-child(n+106):nth-child(-n+119), 
+    &:nth-child(n+127):nth-child(-n+139),
+    &:nth-child(n+148):nth-child(-n+159),
+    &:nth-child(n+169):nth-child(-n+179),
+    &:nth-child(n+190):nth-child(-n+199),
+    &:nth-child(n+211):nth-child(-n+219),
+    &:nth-child(n+232):nth-child(-n+239),
+    &:nth-child(n+253):nth-child(-n+259),
+    &:nth-child(n+274):nth-child(-n+279),
+    &:nth-child(n+295):nth-child(-n+299),
+    &:nth-child(n+316):nth-child(-n+319),
+    &:nth-child(n+337):nth-child(-n+339),
+    &:nth-child(n+358):nth-child(-n+359)
+      background: $color-white
+
+    &:nth-child(59),
+    &:nth-child(79),
+    &:nth-child(99),
+    &:nth-child(119),
+    &:nth-child(139),
+    &:nth-child(159),
+    &:nth-child(179),
+    &:nth-child(199),
+    &:nth-child(219),
+    &:nth-child(239),
+    &:nth-child(259),
+    &:nth-child(279),
+    &:nth-child(299),
+    &:nth-child(319)
+      background: lighten($color-orange, 35) !important
+      +easeall
+    
+    &:nth-child(200)
+      border: 1px solid black
+      box-shadow: 0 0 0 1px white
+      z-index: 100

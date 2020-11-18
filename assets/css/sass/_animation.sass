@@ -1,0 +1,59 @@
+//                                          __                           
+//                 __                      /\ \__  __                    
+//    __      ___ /\_\    ___ ___      __  \ \ ,_\/\_\    ___     ___    
+//  /'__`\  /' _ `\/\ \ /' __` __`\  /'__`\ \ \ \/\/\ \  / __`\ /' _ `\  
+// /\ \L\.\_/\ \/\ \ \ \/\ \/\ \/\ \/\ \L\.\_\ \ \_\ \ \/\ \L\ \/\ \/\ \ 
+// \ \__/.\_\ \_\ \_\ \_\ \_\ \_\ \_\ \__/.\_\\ \__\\ \_\ \____/\ \_\ \_\
+//  \/__/\/_/\/_/\/_/\/_/\/_/\/_/\/_/\/__/\/_/ \/__/ \/_/\/___/  \/_/\/_/
+//
+//                                                                      
+
+// Add vendor prefixes to keyframes
+=keyframe ($animation-name) 
+  @-webkit-keyframes #{$animation-name}
+    @content
+
+  @-moz-keyframes #{$animation-name}
+    @content
+
+  @-o-keyframes #{$animation-name}
+    @content
+
+  @keyframes #{$animation-name}
+    @content
+
+// @include animation(animation name, $speed, ease-out, infinite)
+=animation ($animation, $duration, $transition, $iteration)
+  -webkit-animation-name: $animation
+  -webkit-animation-duration: $duration
+  -webkit-animation-timing-function: $transition
+  -webkit-animation-iteration-count: $iteration
+
+  -moz-animation-name: $animation
+  -moz-animation-duration: $duration
+  -moz-animation-timing-function: $transition
+  -moz-animation-iteration-count: $iteration
+
+  -o-animation-name: $animation
+  -o-animation-duration: $duration
+  -o-animation-timing-function: $transition
+  -o-animation-iteration-count: $iteration
+
+  animation-name: $animation
+  animation-duration: $duration
+  animation-timing-function: $transition
+  animation-iteration-count: $iteration
+
+// +keyframe (block-1-animate)
+//   0%
+//     width: 0
+//   16.6%
+//     left: 0
+//     right: auto
+//     width: 100%
+//   33.2%
+//     left: auto
+//     right: 0
+//     width: 0
+
+

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>contrast-logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="2.55899235%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#DDDDDD" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-2" cx="45" cy="45" r="45"></circle>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="98.7902583%" id="linearGradient-4">
+            <stop stop-color="#444444" offset="0%"></stop>
+            <stop stop-color="#222222" offset="100%"></stop>
+        </linearGradient>
+        <path d="M45.1804679,72.2082281 C60.0217162,72.2082281 72.0529251,60.1770192 72.0529251,45.3357709 C72.0529251,30.4945226 60.0217162,18.4633137 45.1804679,18.4633137 C30.3392196,18.4633137 18.3080107,30.4945226 18.3080107,45.3357709 C18.3080107,60.1770192 30.3392196,72.2082281 45.1804679,72.2082281 Z M45.1804679,79.6498316 C26.2293354,79.6498316 10.8664071,64.2869034 10.8664071,45.3357709 C10.8664071,26.3846384 26.2293354,11.0217102 45.1804679,11.0217102 C64.1316003,11.0217102 79.4945286,26.3846384 79.4945286,45.3357709 C79.4945286,64.2869034 64.1316003,79.6498316 45.1804679,79.6498316 Z" id="path-5"></path>
+        <rect id="path-6" x="0" y="0" width="4.16666667" height="4.16666667"></rect>
+        <rect id="path-7" x="8.33333333" y="0" width="4.16666667" height="4.16666667"></rect>
+        <rect id="path-8" x="0" y="8.33333333" width="4.16666667" height="4.16666667"></rect>
+        <rect id="path-9" x="8.33333333" y="8.33333333" width="4.16666667" height="4.16666667"></rect>
+        <rect id="path-10" x="0" y="16.6666667" width="4.16666667" height="4.16666667"></rect>
+        <rect id="path-11" x="8.33333333" y="16.6666667" width="4.16666667" height="4.16666667"></rect>
+        <rect id="path-12" x="0" y="25" width="4.16666667" height="4.16666667"></rect>
+        <rect id="path-13" x="8.33333333" y="25" width="4.16666667" height="4.16666667"></rect>
+        <rect id="path-14" x="0" y="33.3333333" width="4.16666667" height="4.16666667"></rect>
+        <rect id="path-15" x="8.33333333" y="33.3333333" width="4.16666667" height="4.16666667"></rect>
+        <rect id="path-16" x="0" y="41.6666667" width="4.16666667" height="4.16666667"></rect>
+        <rect id="path-17" x="8.33333333" y="41.6666667" width="4.16666667" height="4.16666667"></rect>
+        <rect id="path-18" x="0" y="50" width="4.16666667" height="4.16666667"></rect>
+        <rect id="path-19" x="8.33333333" y="50" width="4.16666667" height="4.16666667"></rect>
+        <rect id="path-20" x="16.6666667" y="8.33333333" width="4.16666667" height="4.16666667"></rect>
+        <rect id="path-21" x="16.6666667" y="16.6666667" width="4.16666667" height="4.16666667"></rect>
+        <rect id="path-22" x="25" y="16.6666667" width="4.16666667" height="4.16666667"></rect>
+        <rect id="path-23" x="16.6666667" y="25" width="4.16666667" height="4.16666667"></rect>
+        <rect id="path-24" x="25" y="25" width="4.16666667" height="4.16666667"></rect>
+        <rect id="path-25" x="16.6666667" y="33.3333333" width="4.16666667" height="4.16666667"></rect>
+        <rect id="path-26" x="25" y="33.3333333" width="4.16666667" height="4.16666667"></rect>
+        <rect id="path-27" x="16.6666667" y="41.6666667" width="4.16666667" height="4.16666667"></rect>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-28">
+            <stop stop-color="#494749" offset="0%"></stop>
+            <stop stop-color="#272527" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-29" cx="45" cy="45" r="45"></circle>
+        <filter x="-11.1%" y="-8.9%" width="122.2%" height="122.2%" filterUnits="objectBoundingBox" id="filter-30">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-8.3%" y="-6.1%" width="116.7%" height="116.7%" filterUnits="objectBoundingBox" id="filter-31">
+            <feGaussianBlur stdDeviation="1" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="contrast-logo">
+            <g id="icon" transform="translate(5.000000, 5.000000)">
+                <g>
+                    <g id="bg">
+                        <mask id="mask-3" fill="white">
+                            <use xlink:href="#path-2"></use>
+                        </mask>
+                        <g id="Mask">
+                            <use fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                            <use fill="#FFFFFF" xlink:href="#path-2"></use>
+                        </g>
+                        <g id="shapes" mask="url(#mask-3)">
+                            <g transform="translate(-52.747826, -112.695652)">
+                                <rect id="yellow" fill="#FFFF00" transform="translate(116.293933, 251.685237) rotate(-315.000000) translate(-116.293933, -251.685237) " x="49.6672435" y="185.058548" width="133.253379" height="133.253379"></rect>
+                                <rect id="teal" fill="#00F4CD" transform="translate(78.702177, 78.702177) rotate(-315.000000) translate(-78.702177, -78.702177) " x="23.0513341" y="23.0513341" width="111.301687" height="111.301687"></rect>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="logo" fill-rule="nonzero">
+                        <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-5"></use>
+                        <use fill="#111112" fill-rule="evenodd" xlink:href="#path-5"></use>
+                    </g>
+                    <g id="Group" transform="translate(45.833333, 18.333333)">
+                        <g id="Rectangle">
+                            <use fill="url(#linearGradient-4)" xlink:href="#path-6"></use>
+                            <use fill="#111112" xlink:href="#path-6"></use>
+                        </g>
+                        <g id="Path">
+                            <use fill="url(#linearGradient-4)" xlink:href="#path-7"></use>
+                            <use fill="#111112" xlink:href="#path-7"></use>
+                        </g>
+                        <g id="Path">
+                            <use fill="url(#linearGradient-4)" xlink:href="#path-8"></use>
+                            <use fill="#111112" xlink:href="#path-8"></use>
+                        </g>
+                        <g id="Path">
+                            <use fill="url(#linearGradient-4)" xlink:href="#path-9"></use>
+                            <use fill="#111112" xlink:href="#path-9"></use>
+                        </g>
+                        <g id="Path">
+                            <use fill="url(#linearGradient-4)" xlink:href="#path-10"></use>
+                            <use fill="#111112" xlink:href="#path-10"></use>
+                        </g>
+                        <g id="Path">
+                            <use fill="url(#linearGradient-4)" xlink:href="#path-11"></use>
+                            <use fill="#111112" xlink:href="#path-11"></use>
+                        </g>
+                        <g id="Path">
+                            <use fill="url(#linearGradient-4)" xlink:href="#path-12"></use>
+                            <use fill="#111112" xlink:href="#path-12"></use>
+                        </g>
+                        <g id="Path">
+                            <use fill="url(#linearGradient-4)" xlink:href="#path-13"></use>
+                            <use fill="#111112" xlink:href="#path-13"></use>
+                        </g>
+                        <g id="Path">
+                            <use fill="url(#linearGradient-4)" xlink:href="#path-14"></use>
+                            <use fill="#111112" xlink:href="#path-14"></use>
+                        </g>
+                        <g id="Path">
+                            <use fill="url(#linearGradient-4)" xlink:href="#path-15"></use>
+                            <use fill="#111112" xlink:href="#path-15"></use>
+                        </g>
+                        <g id="Path">
+                            <use fill="url(#linearGradient-4)" xlink:href="#path-16"></use>
+                            <use fill="#111112" xlink:href="#path-16"></use>
+                        </g>
+                        <g id="Path">
+                            <use fill="url(#linearGradient-4)" xlink:href="#path-17"></use>
+                            <use fill="#111112" xlink:href="#path-17"></use>
+                        </g>
+                        <g id="Path">
+                            <use fill="url(#linearGradient-4)" xlink:href="#path-18"></use>
+                            <use fill="#111112" xlink:href="#path-18"></use>
+                        </g>
+                        <g id="Path">
+                            <use fill="url(#linearGradient-4)" xlink:href="#path-19"></use>
+                            <use fill="#111112" xlink:href="#path-19"></use>
+                        </g>
+                        <g id="Path">
+                            <use fill="url(#linearGradient-4)" xlink:href="#path-20"></use>
+                            <use fill="#111112" xlink:href="#path-20"></use>
+                        </g>
+                        <g id="Path">
+                            <use fill="url(#linearGradient-4)" xlink:href="#path-21"></use>
+                            <use fill="#111112" xlink:href="#path-21"></use>
+                        </g>
+                        <g id="Path-Copy-2">
+                            <use fill="url(#linearGradient-4)" xlink:href="#path-22"></use>
+                            <use fill="#111112" xlink:href="#path-22"></use>
+                        </g>
+                        <g id="Path">
+                            <use fill="url(#linearGradient-4)" xlink:href="#path-23"></use>
+                            <use fill="#111112" xlink:href="#path-23"></use>
+                        </g>
+                        <g id="Path-Copy-3">
+                            <use fill="url(#linearGradient-4)" xlink:href="#path-24"></use>
+                            <use fill="#111112" xlink:href="#path-24"></use>
+                        </g>
+                        <g id="Path">
+                            <use fill="url(#linearGradient-4)" xlink:href="#path-25"></use>
+                            <use fill="#111112" xlink:href="#path-25"></use>
+                        </g>
+                        <g id="Path-Copy-4">
+                            <use fill="url(#linearGradient-4)" xlink:href="#path-26"></use>
+                            <use fill="#111112" xlink:href="#path-26"></use>
+                        </g>
+                        <g id="Path">
+                            <use fill="url(#linearGradient-4)" xlink:href="#path-27"></use>
+                            <use fill="#111112" xlink:href="#path-27"></use>
+                        </g>
+                    </g>
+                </g>
+                <g id="light">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-30)" xlink:href="#path-29"></use>
+                    <use fill-opacity="0" fill="url(#linearGradient-28)" fill-rule="evenodd" xlink:href="#path-29"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-31)" xlink:href="#path-29"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
