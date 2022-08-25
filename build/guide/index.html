@@ -1,0 +1,130 @@
+
+<html lang="en">
+  <head>
+    <title>Use Contrast — Guide</title>
+    <meta charset="utf-8"/>
+    <meta name="description" content="Prototype"/>
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="MobileOptimized" content="320"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes"/>
+    <meta name="description" content="Use Contrast for Figma provides quick access to WCAG color contrast ratios."/>
+    <meta itemprop="name" content="Use Contrast"/>
+    <meta itemprop="description" content="Use Contrast for Figma provides quick access to WCAG color contrast ratios."/>
+    <meta itemprop="image" content="https://mds-assets.s3.amazonaws.com/contrast/meta-contrast-22.png"/>
+    <meta name="google-site-verification" content="2HVjSD1yH1jX6CtamvDwyuTqQFwMdoFvlbLbXLtEmJQ"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content="@mds"/>
+    <meta name="twitter:title" content="Use Contrast"/>
+    <meta name="twitter:description" content="Use Contrast for Figma provides quick access to WCAG color contrast ratios."/>
+    <meta name="twitter:creator" content="@mds"/>
+    <meta name="twitter:image:src" content="https://mds-assets.s3.amazonaws.com/contrast/meta-contrast-22.png"/>
+    <meta property="og:title" content="Use Contrast"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="http://shiftnudge.com"/>
+    <meta property="og:image" content="https://mds-assets.s3.amazonaws.com/contrast/meta-contrast-22.png"/>
+    <meta property="og:description" content="Use Contrast for Figma provides quick access to WCAG color contrast ratios."/>
+    <meta property="og:site_name" content="Use Contrast"/>
+  </head>
+  <link rel="stylesheet" type="text/css" href="/css/screen.css"/>
+  <div class="content interior">
+    <main>
+      <h1 class="hide">Use Contrast Guide</h1><a class="line-item reverse" href="/">
+        <div class="value">
+          <div class="arrow">&larr;</div> Contrast guide
+        </div> </a>
+      <p>There are an estimated <a href="http://www.who.int/mediacentre/factsheets/fs282/en/">2.2 billion people</a> in the world who are visually impaired. This number includes anyone from legally blind, to those with less than 20/20 vision.</p>
+      <p>This short guide will help you achieve the accessibility standards outlined in the <a href="https://www.w3.org/WAI/intro/wcag">WCAG 2.0</a>, specifically with foreground and background color when it comes to text.</p>
+      <section><a class="line-item line-item_interior" href="#summary">
+          <h2>Summary</h2> </a>
+        <div class="interior-grid">
+          <div class="interior-grid-item">
+            <p>Fail</p>
+            <p>Do not use this for any text that is meant to be read. A failing score of 1.5 can be a nice choice for logos, graphical elements, subtle borders, dividers, and disabled buttons—which have no contrast requirements.</p>
+          </div>
+          <div class="interior-grid-item">
+            <p>AA Large</p>
+            <p>Only use this score for 18px bold and 21px regular (and larger) fonts. This is also a great option for primary CTAs (calls to action) as well as interface icons.</p>
+          </div>
+          <div class="interior-grid-item">
+            <p>AA </p>
+            <p>This score is safe to use for all text sizes throughout your designs.</p>
+          </div>
+          <div class="interior-grid-item">
+            <p>AAA </p>
+            <p>This is an enhanced contrast and is recommended for longer form copy that is meant to be read for a significant period of time, like this guide.</p>
+          </div>
+        </div>
+      </section>
+      <section><a class="line-item line-item_interior" href="#score&amp;ratio">
+          <h2>Score &amp; Ratio</h2> </a>
+        <div class="interior-grid">
+          <div class="pushed">
+            <p>There is an <a href="https://www.w3.org/TR/2008/REC-WCAG20-20081211/#relativeluminancedef">equation provided</a> by the WCAG  (Web Content Accessibility Guidelines) that determines these two values.</p>
+            <p>The equation outputs a number between 0 and 21. 21 is the highest amount of contrast—black text on a white background—and 0 is no contrast—white on white.</p>
+            <p>The output of contrast between any two colors will fall somewhere on the spectrum between 0 – 21. That's where the scores—Fail, AA Large, AA, AAA—are derived from.</p>
+          </div>
+        </div>
+      </section>
+      <section><a class="line-item line-item_interior" href="#fail">
+          <h2>Fail</h2> 
+          <div class="value">
+            <div class="arrow">(1.5)</div>
+          </div></a>
+        <div class="pushed">
+          <p>Fail means that your text has a contrast ratio of 2.9 or lower. This does not apply to logos, text in logos, and other decorative elements.</p>
+          <p>Quite often, failing scores can seem to work nicely within the context of a static design review. But in the context of real world usage, these failing scores can cause problems for the usability of your website or app.</p>
+        </div>
+      </section>
+      <section><a class="line-item line-item_interior" href="#aa-large">
+          <h2>AA Large</h2> 
+          <div class="value">
+            <div class="arrow">(3.0)</div>
+          </div></a>
+        <div class="pushed">
+          <p>AA Large means that your text has a contrast ratio of at least 3.0. For example, <code>949494</code> text on a <code>ffffff</code> background.</p>
+          <p>This is the minimum level recommended for standard text and normal vision based on empirical evidence.</p>
+          <p>In the macOS app, we made the decision to abbreviate Large to + so that each score would be similar in character length and not impact the fixed width of the interface.</p>
+        </div>
+      </section>
+      <section><a class="line-item line-item_interior" href="#aa">
+          <h2>AA</h2> 
+          <div class="value">
+            <div class="arrow">(4.5)</div>
+          </div></a>
+        <div class="pushed">
+          <p>AA means that your text has a contrast ratio of at least 4.5 or higher. For example, <code>777777</code> text on a <code>ffffff</code> background and vice versa.</p>
+          <p>There is empirical evidence that visual acuity of 20/40 is associated with a contrast sensitivity loss of roughly 1.5, which is where the 4.5 score is derived.</p>
+        </div>
+      </section>
+      <section><a class="line-item line-item_interior" href="#aaa">
+          <h2>AAA</h2> 
+          <div class="value">
+            <div class="arrow">(7.0)</div>
+          </div></a>
+        <div class="pushed">
+          <p>AAA means that your have a contrast ratio of at least 7.0. For example, <code>ffffff</code> text on a <code>595959</code> background and vice versa.</p>
+          <p>This score is derived for people with 20/80 vision. This visual acuity score is often not able to be corrected with glasses, etc.</p>
+          <p>Side note, 20/200 is legally blind.</p>
+        </div>
+      </section>
+      <section><a class="line-item line-item_interior" href="#mobile">
+          <h2>Mobile</h2> </a>
+        <p>What about mobile apps and their big sharp retina screens? There's a <a href="https://www.w3.org/TR/mobile-accessibility-mapping/#contrast">working draft</a> of the WCAG Mobile guidelines that says...</p>
+        <p>"Mobile devices are more likely than desktop/laptop devices to be used in varied environments including outdoors, where glare from the sun or other strong lighting sources is more likely. This scenario heightens the importance of use of good contrast for all users and may compound the challenges that users with low vision have accessing content with poor contrast on mobile devices."</p>
+        <p>So while it is probably easier to see lighter text on a high resolution screens in a controlled environment, the use case for mobile is incredibly unpredictable to risk going super light with text. Direct sunlight, dark rooms, and more all significantly affect the display on mobile screens.</p>
+        <p>If you have more unquenched thirst for color and how it can be leveraged in interface design, <a href="https://shiftnudge.com">checkout Shift Nudge</a>.</p>
+      </section>
+      <section><a class="line-item line-item_interior" href="#more">
+          <h2>More</h2> </a>
+        <p>There's a lot more to accessibility than just color contrast. According to the WCAG, in order to hit a true AAA rating you not only need to meet all AAA color contrast requirements, but also...</p>
+        <blockquote>
+          <p>1.4.8 Visual Presentation: For the visual presentation of blocks of text, a mechanism is available to achieve the following: (Level AAA) Foreground and background colors can be selected by the user. Width is no more than 80 characters or glyphs (40 if CJK). Text is not justified (aligned to both the left and the right margins). Line spacing (leading) is at least space-and-a-half within paragraphs, and paragraph spacing is at least 1.5 times larger than the line spacing. Text can be resized without assistive technology up to 200 percent in a way that does not require the user to scroll horizontally to read a line of text on a full-screen window.</p>
+        </blockquote>
+        <p>If you'd like to see just how deep the the WCAG rabbit hole goes, take the <a href="https://www.w3.org/WAI/standards-guidelines/wcag/">red pill</a>.</p>
+      </section>
+    </main>
+    <div class="contrast-shape contrast-shape-circle-small"></div>
+  </div>
+  <script type="text/javascript" src="/js/contrast-min.js"> </script>
+  <script src="https://cdn.usefathom.com/script.js" data-site="CLCDFMTJ" defer="defer"></script>
+</html>
