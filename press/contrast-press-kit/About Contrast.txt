@@ -1,5 +1,0 @@
-Make sure the text you're designing isn't too light in your interface designs with Contrast. Combine this simple little menu bar app with your favorite design tool and design with accessibility in mind.
-
-Enter hex codes manually or use the built in color picker for sampling colors directly from your designs.
-
-Tear the app from the menu bar and use it as a floating window wherever you'd like. It'll stay on top of your active design tool for quick access to the WCAG contrast scores.

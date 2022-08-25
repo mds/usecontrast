@@ -1,0 +1,56 @@
+//- 01 index.pug
+extends ../includes/layout.pug
+
+block head
+	title Use Contrast — What the HEX?
+
+//- block meta pulls in here
+block content
+	.content.interior
+		main
+			h1.hide Use Contrast – What the HEX?
+			a.line-item.reverse(href="/") #[.value #[.arrow &larr;] What the HEX?] 
+
+			p This was written in response to the macOS issues with incorrect color sampling.
+
+			blockquote
+				p “My color picker is picking the wrong hex code in the app.”
+				p “My hex codes are different than my eye dropper’s selection.”
+				p “Each time I choose a color, the hex is slightly different.”
+
+			p We’ve heard this many times from many users and have also experienced this ourselves. We feel your pain!
+
+			section
+				a.line-item.line-item_interior(href="#summary") #[h2 Short Answer] 
+
+				p Color spaces on the Mac are difficult to predict between multiple pieces of software, so use the manual hex codes as the fail safe.
+
+				p You may see hex code differences between Contrast and your design tool, but this is often created by slightly different color space combinations and/or mathematical rounding differences between software.
+
+				p However, if you're choosing both foreground and background colors with the color picker, the score will be correct, even if the hex codes are different than your design tool. Both colors will be rounded and chosen with the same algorithm, which will result in a correct WCAG score.
+
+			section
+				a.line-item.line-item_interior(href="#summary") #[h2 Longer Answer] 
+
+				p The longer answer can be summarized with #[a(href="https://twitter.com/esbenlorenzo/status/1234500911822786560?s=21") this series of tweets], or by continuing to read below.
+
+				p If a color space is set to sRGB then there is more of a possibility that the color picker will be closer to the actual intended hex code, but Apple’s framework for color is 8 bits per channel, which will quite often result in rounding errors of hex codes, even if they’re all in the same color space.
+
+				p The rounding errors will be extremely hard to perceive with your eyes, but nonetheless there will be some odd wiggle room that comes from using one piece of software to select colors from another piece of software.
+
+				p We've tested different versions of Contrast for Mac that allows set color spaces within the settings, but it still has the same rounding error issues that you’ll see in other cross software, color picking solutions. It has lessened the differences, but hasn't solved them completely as there is a deeper fundamental issue at play.
+
+				p So now that you’re more informed of the color picking conundrum...
+
+				p Use the hex codes from your design tool pasted into the manual inputs of Contrast for the most consistency.
+
+				p If you'd like to continue your quest for color knowledge, #[a(href="https://www.ricciadams.com/articles/osx-color-conversions/") this article] is also helpful.
+
+
+		//- shapes
+		.contrast-shape.contrast-shape-circle-small
+		//- .contrast-shape.contrast-shape-circle-big
+
+//- block foot gets imported here from layout.pug
+
+

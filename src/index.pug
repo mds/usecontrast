@@ -1,0 +1,38 @@
+//- 01 index.pug
+extends includes/layout.pug
+
+block head
+	title Use Contrast — Figma plugin
+
+//- block meta pulls in here
+block content
+	.content
+		main
+			h1.hide Use Contrast
+			a.line-item(href="https://twitter.com/usecontrast") #[h2 Figma plugin for quick access to WCAG color contrast ratios] #[.value Soon #[.arrow &rarr;]]
+
+		//- plugin
+		include includes/plugin.pug
+
+		section.nav
+			//- h2.line-item Links
+			a.line-item(href="/guide") #[h2 Contrast guide] #[.value #[.arrow &rarr;]]
+			a.line-item(href="https://github.com/soffes/contrast") #[h2 Mac app] #[.value #[.arrow &rarr;]]
+		section.credits
+			//- h2.line-item Credits
+			a.line-item(href="https://twitter.com/mds") #[h2 Design] #[.value @mds #[.arrow &rarr;]]
+			a.line-item(href="https://twitter.com/gusso") #[h2 Figma dev#[span elopment]] #[.value @gusso #[.arrow &rarr;]]
+			a.line-item(href="https://twitter.com/soffes") #[h2 macOS dev#[span elopment]] #[.value @soffes #[.arrow &rarr;]]
+
+		//- section.more
+		//- 	a.line-item(href="#mode") #[h2 Toggle Dark Mode] #[.value #[.arrow &rarr;]]
+		//- 	a.line-item(href="https://shiftnudge.com") #[h2 Shift Nudge] #[.value #[.arrow &rarr;]]
+		//- 	a.line-item(href="https://useflowkit.com") #[h2 Flowkit] #[.value #[.arrow &rarr;]]
+
+		//- shapes
+		.contrast-shape.contrast-shape-circle-small
+		.contrast-shape.contrast-shape-circle-big
+
+//- block foot gets imported here from layout.pug
+
+

@@ -1,0 +1,31 @@
+$xsmall-width: 375px
+$small-width: 640px
+$medium-width: 900px
+$large-width: 1280px
+$xlarge-width: 1800px
+
+=bp-xsmall
+  @media (min-width: #{$xsmall-width})
+    @content
+
+=bp-small
+  @media (min-width: #{$small-width})
+    @content
+
+=bp-medium
+  @media (min-width: #{$medium-width})
+    @content
+
+=bp-large
+  @media (min-width: #{$large-width})
+    @content
+
+=bp-xlarge
+  @media (min-width: #{$xlarge-width})
+    @content
+
+=easeall
+  transition: all .2s ease-out
+
+=plugin-shadow
+  box-shadow: 0 2px 2px 0 rgba($c-black, .05), 0 4px  6px 0 rgba($c-black, .05), 0 8px  10px 0 rgba($c-black, .05), 0 14px 18px 0 rgba($c-black, .05), 0 26px 32px 0 rgba($c-black, .1), 0 0 0 1px rgba($c-black, .05)
