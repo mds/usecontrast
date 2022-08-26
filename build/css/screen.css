@@ -181,6 +181,7 @@ body {
   overflow-x: hidden;
   position: relative;
   background: var(--c-bg);
+  height: 100%;
 }
 
 main {
