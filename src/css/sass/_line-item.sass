@@ -1,0 +1,100 @@
+
+//- default
+//- ------------------------------------------------------
+.line-item
+	color: var(--c-primary)
+	display: grid
+	box-shadow: inset 0 -1px 0 0 var(--c-tertiary)
+	text-decoration: none
+	padding: 4px 0
+	+easeall
+
+	&:hover
+		box-shadow: inset 0 -1px 0 0 var(--c-primary)
+		+easeall
+
+//- title
+//- ------------------------------------------------------
+.line-item--title
+	grid-template-columns: 1fr 1fr
+	align-items: end
+
+	h2
+		max-width: 320px
+		span
+			display: none
+			+bp-small
+				display: inline
+
+	.value
+		justify-self: end
+		align-self: end
+
+	.arrow
+		padding-left: 4px
+		display: inline-block
+		transform: translateX(-4px)
+		+easeall
+
+	&:hover
+		.arrow
+			transform: translateX(0)
+			+easeall
+
+//- interior
+//- ------------------------------------------------------
+.line-item--title-interior
+	display: grid
+	box-shadow: inset 0 -1px 0 0 var(--c-tertiary)
+	grid-template-columns: 1fr 1fr
+	align-items: end
+	margin-bottom: 40px
+	h1
+		text-align: right
+
+	.arrow
+		color: var(--c-secondary)
+		transform: translateX(4px)
+		+easeall
+
+	&:hover	
+		.arrow
+			color: var(--c-primary)
+			transform: translateX(0)
+			+easeall
+
+// subtitle
+//- ------------------------------------------------------
+.line-item--subtitle
+	margin-bottom: 40px
+	+easeall
+
+	h2
+		color: var(--c-secondary)
+
+	&:hover
+		h2
+			color: var(--c-primary)
+
+
+// mid
+//- ------------------------------------------------------
+.line-item--mid
+	margin-bottom: 40px
+
+	.value
+		color: var(--c-secondary)		
+	+bp-small
+		display: grid
+		grid-template-columns: 175px 1fr
+
+	h2
+		color: var(--c-secondary)
+
+	&:hover
+		h2
+			color: var(--c-primary)
+
+
+
+

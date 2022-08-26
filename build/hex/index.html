@@ -27,11 +27,9 @@
   </head>
   <link rel="stylesheet" type="text/css" href="/css/screen.css"/>
   <div class="content interior">
-    <main>
-      <h1 class="hide">Use Contrast – What the HEX?</h1><a class="line-item reverse" href="/">
-        <div class="value">
-          <div class="arrow">&larr;</div> What the HEX?
-        </div> </a>
+    <main><a class="line-item line-item--title-interior" href="/">
+        <div class="arrow">&larr;</div> 
+        <h1>What the HEX?</h1> </a>
       <p>This was written in response to the macOS issues with incorrect color sampling.</p>
       <blockquote>
         <p>“My color picker is picking the wrong hex code in the app.”</p>
@@ -39,13 +37,13 @@
         <p>“Each time I choose a color, the hex is slightly different.”</p>
       </blockquote>
       <p>We’ve heard this many times from many users and have also experienced this ourselves. We feel your pain!</p>
-      <section><a class="line-item line-item_interior" href="#summary">
+      <section><a class="line-item line-item--subtitle" href="#summary">
           <h2>Short Answer</h2> </a>
         <p>Color spaces on the Mac are difficult to predict between multiple pieces of software, so use the manual hex codes as the fail safe.</p>
         <p>You may see hex code differences between Contrast and your design tool, but this is often created by slightly different color space combinations and/or mathematical rounding differences between software.</p>
         <p>However, if you're choosing both foreground and background colors with the color picker, the score will be correct, even if the hex codes are different than your design tool. Both colors will be rounded and chosen with the same algorithm, which will result in a correct WCAG score.</p>
       </section>
-      <section><a class="line-item line-item_interior" href="#summary">
+      <section><a class="line-item line-item--subtitle" href="#summary">
           <h2>Longer Answer</h2> </a>
         <p>The longer answer can be summarized with <a href="https://twitter.com/esbenlorenzo/status/1234500911822786560?s=21">this series of tweets</a>, or by continuing to read below.</p>
         <p>If a color space is set to sRGB then there is more of a possibility that the color picker will be closer to the actual intended hex code, but Apple’s framework for color is 8 bits per channel, which will quite often result in rounding errors of hex codes, even if they’re all in the same color space.</p>

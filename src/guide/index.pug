@@ -8,8 +8,7 @@ block head
 block content
 	.content.interior
 		main
-			h1.hide Use Contrast Guide
-			a.line-item.reverse(href="/") #[.value #[.arrow &larr;] Contrast guide] 
+			a.line-item.line-item--title-interior(href="/") #[.arrow &larr;] #[h1 Contrast guide] 
 
 			//- .videoWrapper
 			//- 	<iframe width="560" height="315" src="https://www.youtube.com/embed/gaoM_8rsYac" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -21,7 +20,7 @@ block content
 			//- SUMMARY
 			//- ------------------------------------------------------------------------
 			section
-				a.line-item.line-item_interior(href="#summary") #[h2 Summary] 
+				a.line-item.line-item--subtitle(href="#summary") #[h2 Summary] 
 				.interior-grid
 					.interior-grid-item
 						p Fail
@@ -39,7 +38,7 @@ block content
 			//- SCORE & RATIO
 			//- ------------------------------------------------------------------------
 			section
-				a.line-item.line-item_interior(href="#score&ratio") #[h2 Score &amp; Ratio] 
+				a.line-item.line-item--subtitle(href="#score&ratio") #[h2 Score &amp; Ratio] 
 				.interior-grid
 					.pushed
 						p There is an #[a(href='https://www.w3.org/TR/2008/REC-WCAG20-20081211/#relativeluminancedef') equation provided] by the WCAG  (Web Content Accessibility Guidelines) that determines these two values.
@@ -49,7 +48,7 @@ block content
 			//- FAIL
 			//- ------------------------------------------------------------------------
 			section
-				a.line-item.line-item_interior(href="#fail") #[h2 Fail] #[.value #[.arrow (1.5)]]
+				a.line-item.line-item--mid(href="#fail") #[h2 Fail] #[.value (1.5)]
 				.pushed
 					p Fail means that your text has a contrast ratio of 2.9 or lower. This does not apply to logos, text in logos, and other decorative elements.
 					p Quite often, failing scores can seem to work nicely within the context of a static design review. But in the context of real world usage, these failing scores can cause problems for the usability of your website or app.
@@ -57,7 +56,7 @@ block content
 			//- AA LARGE
 			//- ------------------------------------------------------------------------
 			section
-				a.line-item.line-item_interior(href="#aa-large") #[h2 AA Large] #[.value #[.arrow (3.0)]]
+				a.line-item.line-item--mid(href="#aa-large") #[h2 AA Large] #[.value (3.0)]
 				.pushed
 					p AA Large means that your text has a contrast ratio of at least 3.0. For example, #[code 949494] text on a #[code ffffff] background.
 					p This is the minimum level recommended for standard text and normal vision based on empirical evidence.
@@ -66,7 +65,7 @@ block content
 			//- AA
 			//- ------------------------------------------------------------------------
 			section
-				a.line-item.line-item_interior(href="#aa") #[h2 AA] #[.value #[.arrow (4.5)]]
+				a.line-item.line-item--mid(href="#aa") #[h2 AA] #[.value (4.5)]
 				.pushed
 					p AA means that your text has a contrast ratio of at least 4.5 or higher. For example, #[code 777777] text on a #[code ffffff] background and vice versa.
 					p There is empirical evidence that visual acuity of 20/40 is associated with a contrast sensitivity loss of roughly 1.5, which is where the 4.5 score is derived.
@@ -74,7 +73,7 @@ block content
 			//- AAA
 			//- ------------------------------------------------------------------------
 			section
-				a.line-item.line-item_interior(href="#aaa") #[h2 AAA] #[.value #[.arrow (7.0)]]
+				a.line-item.line-item--mid(href="#aaa") #[h2 AAA] #[.value (7.0)]
 				.pushed
 					p AAA means that your have a contrast ratio of at least 7.0. For example, #[code ffffff] text on a #[code 595959] background and vice versa.
 					p This score is derived for people with 20/80 vision. This visual acuity score is often not able to be corrected with glasses, etc.
@@ -83,7 +82,7 @@ block content
 			//- Mobile
 			//- ------------------------------------------------------------------------
 			section
-				a.line-item.line-item_interior(href="#mobile") #[h2 Mobile] 
+				a.line-item.line-item--mid(href="#mobile") #[h2 Mobile] 
 				
 				p What about mobile apps and their big sharp retina screens? There's a #[a(href="https://www.w3.org/TR/mobile-accessibility-mapping/#contrast") working draft] of the WCAG Mobile guidelines that says...
 
@@ -96,7 +95,7 @@ block content
 			//- MORE
 			//- ------------------------------------------------------------------------
 			section
-				a.line-item.line-item_interior(href="#more") #[h2 More] 
+				a.line-item.line-item--mid(href="#more") #[h2 More] 
 
 				p There's a lot more to accessibility than just color contrast. According to the WCAG, in order to hit a true AAA rating you not only need to meet all AAA color contrast requirements, but also...
 				blockquote
@@ -104,13 +103,6 @@ block content
 
 				p If you'd like to see just how deep the the WCAG rabbit hole goes, take the #[a(href="https://www.w3.org/WAI/standards-guidelines/wcag/") red pill].
 
-				//- p This guide was written by #[a(href="https://twitter.com/mds") MDS].
 
-
-		//- shapes
 		.contrast-shape.contrast-shape-circle-small
-		//- .contrast-shape.contrast-shape-circle-big
-
-//- block foot gets imported here from layout.pug
-
 

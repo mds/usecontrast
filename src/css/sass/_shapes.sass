@@ -1,0 +1,54 @@
+
+.contrast-shape
+	position: absolute
+	border-radius: 50%
+	display: block
+
+.contrast-shape-circle-small
+	background: var(--c-one)
+	width: 320px
+	height: 320px
+	top: 40px
+	left: -190px
+	z-index: -1
+	animation: float-small 30s infinite ease-in-out
+
+.contrast-shape-circle-big
+	background: var(--c-two)
+	width: 1000px
+	height: 1000px
+	bottom: -320px
+	right: -640px
+	z-index: -1
+	animation: float 20s infinite ease-in-out
+	+easeall
+
+@keyframes float
+	0%
+		transform: translateX(0)
+	20%
+		transform: translateX(40px)
+	40%
+		transform: translateX(-40px)
+	60%
+		transform: translateX(40px)
+	80%
+		transform: translateX(0)
+
+@keyframes float-small
+	0%
+		transform: translate(0, 0)
+	20%
+		transform: translate(40px, 40px)
+	40%
+		transform: translate(-40px, -40px)
+	60%
+		transform: translate(40px, 40px)
+	80%
+		transform: translate(0, 0)
+
+
+// .contrast-shape-circle-small--interior
+// 	top: 320px !important
+// 	right: -120px !important
+// 	left: 0 !important

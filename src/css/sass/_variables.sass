@@ -1,11 +1,57 @@
-// hex
-$c-black: black
-$c-dark: #111111
-$c-white: white
-$c-yellow: yellow
-$c-teal: #66FFCC
-$c-grey: #767676
-$c-light-grey: #f0f0f0
+:root
+	--c-black: 0,0,0
+	--c-dark: 17,17,17
+	--c-white: 255,255,255
+	--c-teal: 102,255,204
+	--c-yellow: 255,255,0
+	--c-pink: 200,30,255
+	--c-purple: 128,0,255
 
-$c-pink: #C520FF
-$c-purple: #8000FF
+	--c-figma-light-border: 240,240,240
+	--c-figma-light-helper-text: 117,117,117
+	--c-figma-dark: 44,44,44
+	--c-figma-dark-border: 68,68,68
+	--c-figma-dark-helper-text: 192,192,192
+
+=light-mode
+	--c-primary: rgba(var(--c-dark), 1)
+	--c-secondary: rgba(var(--c-dark), .5)
+	--c-tertiary: rgba(var(--c-dark), .1)
+	--c-bg: rgba(var(--c-white), 1)
+	--c-one: rgba(var(--c-teal), 1)
+	--c-two: rgba(var(--c-yellow), 1)
+	--c-plugin-text: rgba(var(--c-black), 1)
+	--c-plugin-bg: rgba(var(--c-white), 1)
+	--c-plugin-border: rgba(var(--c-figma-light-border), 1)
+	--c-plugin-helper-text: rgba(var(--c-figma-light-helper-text), 1)
+	--c-plugin-display-text: rgba(var(--c-black), 1)
+	--c-plugin-display-bg: rgba(var(--c-yellow), 1)
+	--c-plugin-swatch-fg: rgba(var(--c-dark), 1)
+	--c-plugin-swatch-bg: rgba(var(--c-yellow), 1)
+
+=dark-mode
+	--c-primary: rgba(var(--c-white), .75)
+	--c-secondary: rgba(var(--c-white), .4)
+	--c-tertiary: rgba(var(--c-white), .1)
+	--c-bg: rgba(var(--c-dark), 1)
+	--c-one: rgba(var(--c-pink), 1)
+	--c-two: rgba(var(--c-purple), 1)
+	--c-plugin-text: rgba(var(--c-white), 1)
+	--c-plugin-bg: rgba(var(--c-figma-dark), 1)
+	--c-plugin-border: rgba(var(--c-figma-dark-border), 1)
+	--c-plugin-helper-text: rgba(var(--c-figma-dark-helper-text), 1)
+	--c-plugin-display-text: rgba(var(--c-white), 1)
+	--c-plugin-display-bg: rgba(var(--c-dark), 1)
+	--c-plugin-swatch-fg: rgba(var(--c-white), 1)
+	--c-plugin-swatch-bg: rgba(var(--c-dark), 1)
+
+body.dark-mode 
+	+dark-mode
+
+@media (prefers-color-scheme: dark) 
+	html
+		background: #111
+	body /* defaults to dark mode */
+		+dark-mode
+	body.light-mode 
+		+light-mode

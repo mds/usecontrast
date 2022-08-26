@@ -1,0 +1,9 @@
+script.
+  (function() {
+    const currentMode = localStorage.getItem("mode"); 
+    if (currentMode == "dark") { 
+      document.body.classList.toggle("dark-mode");
+    } else if (currentMode == "light") { 
+      document.body.classList.toggle("light-mode"); 
+    }
+  })();

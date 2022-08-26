@@ -8,8 +8,7 @@ block head
 block content
 	.content.interior
 		main
-			h1.hide Use Contrast – What the HEX?
-			a.line-item.reverse(href="/") #[.value #[.arrow &larr;] What the HEX?] 
+			a.line-item.line-item--title-interior(href="/") #[.arrow &larr;] #[h1 What the HEX?] 
 
 			p This was written in response to the macOS issues with incorrect color sampling.
 
@@ -21,7 +20,7 @@ block content
 			p We’ve heard this many times from many users and have also experienced this ourselves. We feel your pain!
 
 			section
-				a.line-item.line-item_interior(href="#summary") #[h2 Short Answer] 
+				a.line-item.line-item--subtitle(href="#summary") #[h2 Short Answer] 
 
 				p Color spaces on the Mac are difficult to predict between multiple pieces of software, so use the manual hex codes as the fail safe.
 
@@ -30,7 +29,7 @@ block content
 				p However, if you're choosing both foreground and background colors with the color picker, the score will be correct, even if the hex codes are different than your design tool. Both colors will be rounded and chosen with the same algorithm, which will result in a correct WCAG score.
 
 			section
-				a.line-item.line-item_interior(href="#summary") #[h2 Longer Answer] 
+				a.line-item.line-item--subtitle(href="#summary") #[h2 Longer Answer] 
 
 				p The longer answer can be summarized with #[a(href="https://twitter.com/esbenlorenzo/status/1234500911822786560?s=21") this series of tweets], or by continuing to read below.
 

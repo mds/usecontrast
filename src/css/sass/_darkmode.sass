@@ -1,62 +1,78 @@
 @media screen and (prefers-color-scheme: dark)
-  body
-    background-color: $c-dark !important
-    color: rgba($c-white, .75) !important
 
-  code
-    color: rgba($c-white, .4) !important
-
-  h2.line-item
-    color: rgba($c-white, .4) !important
-    box-shadow: inset 0 -1px 0 0 rgba($c-white, .1) !important
-
-  a.line-item
-    color: rgba($c-white, .75) !important
-    box-shadow: inset 0 -1px 0 0 rgba($c-white, .1) !important
-
-    &:hover
-      box-shadow: inset 0 -1px 0 0 rgba($c-white, 1) !important
-
-  .interior p a
-    box-shadow: inset 0 -1px 0 0 rgba($c-white, .75) !important    
-
-  .interior a.line-item
-    &.reverse .value
-      color: rgba($c-white, .75) !important
-    h2, .value
-      color: rgba($c-white, .4) !important
-
-    &:hover
-      box-shadow: inset 0 -1px 0 0 rgba($c-white, 1) !important
 
   .contrast-shape-circle-small
-    background: $c-pink  !important
+    background: $c-pink  
 
   .contrast-shape-circle-big
-    background: $c-purple  !important
+    background: $c-purple  
 
   .plugin
-    background: #2c2c2c  !important
+    background: #2c2c2c  
 
     .plugin-colors
-      direction: rtl !important
+      direction: rtl 
 
     p
-      color: $c-white  !important
+      color: $c-white  
     .plugin-header
-      box-shadow: 0 -1px 0 0 #444444  !important
+      box-shadow: 0 -1px 0 0 #444444  
     .plugin-display
-      background: $c-dark !important
-      box-shadow: 0 -1px 0 0 #444444  !important
+      background: $c-dark 
+      box-shadow: 0 -1px 0 0 #444444  
       p
-        color: $c-yellow  !important
+        color: $c-yellow  
     .color, .score
-      box-shadow: inset 0 0 0 1px #444444  !important
+      box-shadow: inset 0 0 0 1px #444444  
 
-  .interior
-    a
-      color: rgba($c-white, .75) !important
-      box-shadow: inset 0 -1px 0 0 rgba($c-white, .1) !important
-    .line-item
-      &.interior
-        color: rgba($c-white, .5) !important
+=elements-light
+  // stuff here for light mode
+
+=elements-dark
+  // stuff here for dark mode
+
+
+// light & dark mode
+=mode-light
+  --color: var(--c-black)
+  --bg: var(--c-white)
+  +elements-const
+  +elements-light
+
+=mode-dark
+  --color: var(--c-white)
+  --bg: var(--c-black)
+  +elements-const
+  +elements-dark
+
+
+// define RGB colors
+body
+  --c-white: 255,255,255
+  --c-black: 0,0,0
+
+body 
+  +mode-light
+body.dark-mode 
+  +mode-dark
+
+@media (prefers-color-scheme: dark) 
+  body /* defaults to dark mode */
+    +mode-dark
+  body.light-mode 
+    +mode-light
+
+body 
+  +mode-light
+body.dark-mode 
+  +mode-dark
+
+
+
+
+
+
+
+
+
+
