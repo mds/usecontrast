@@ -49,6 +49,29 @@ table {
   --c-figma-dark-helper-text: 192,192,192;
 }
 
+body {
+  --c-primary: rgba(var(--c-dark), 1);
+  --c-secondary: rgba(var(--c-dark), .5);
+  --c-tertiary: rgba(var(--c-dark), .1);
+  --c-bg: rgba(var(--c-white), 1);
+  --c-one: rgba(var(--c-teal), 1);
+  --c-two: rgba(var(--c-yellow), 1);
+  --c-plugin-text: rgba(var(--c-black), 1);
+  --c-plugin-bg: rgba(var(--c-white), 1);
+  --c-plugin-border: rgba(var(--c-figma-light-border), 1);
+  --c-plugin-helper-text: rgba(var(--c-figma-light-helper-text), 1);
+  --c-plugin-display-text: rgba(var(--c-black), 1);
+  --c-plugin-display-bg: rgba(var(--c-yellow), 1);
+  --c-plugin-swatch-fg: rgba(var(--c-dark), 1);
+  --c-plugin-swatch-bg: rgba(var(--c-yellow), 1);
+}
+body .plugin-light {
+  display: block;
+}
+body .plugin-dark {
+  display: none;
+}
+
 body.dark-mode {
   --c-primary: rgba(var(--c-white), .75);
   --c-secondary: rgba(var(--c-white), .4);
