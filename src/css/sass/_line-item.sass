@@ -8,7 +8,6 @@
 	text-decoration: none
 	padding: 4px 0
 	 
-
 	&:hover
 		box-shadow: inset 0 -1px 0 0 var(--c-primary)
 		 
@@ -16,11 +15,13 @@
 //- title
 //- ------------------------------------------------------
 .line-item--title
-	grid-template-columns: 1fr 1fr
+	grid-template-columns: 2fr 1fr
 	align-items: end
 
+	h1
+		max-width: 300px
+		
 	h2
-		max-width: 320px
 		span
 			display: none
 			+bp-small
@@ -68,7 +69,6 @@
 .line-item--subtitle
 	margin-bottom: 40px
 	 
-
 	h2
 		color: var(--c-secondary)
 
@@ -81,12 +81,19 @@
 //- ------------------------------------------------------
 .line-item--mid
 	margin-bottom: 40px
+	display: grid
+	grid-template-columns: 1fr 1fr
 
 	.value
-		color: var(--c-secondary)		
+		color: var(--c-secondary)
+		text-align: right
+
 	+bp-small
 		display: grid
 		grid-template-columns: 175px 1fr
+
+		.value
+			text-align: left
 
 	h2
 		color: var(--c-secondary)

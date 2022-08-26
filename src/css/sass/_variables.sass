@@ -28,6 +28,10 @@
 	--c-plugin-display-bg: rgba(var(--c-yellow), 1)
 	--c-plugin-swatch-fg: rgba(var(--c-dark), 1)
 	--c-plugin-swatch-bg: rgba(var(--c-yellow), 1)
+	.plugin-light
+		display: block
+	.plugin-dark
+		display: none
 
 =dark-mode
 	--c-primary: rgba(var(--c-white), .75)
@@ -44,6 +48,10 @@
 	--c-plugin-display-bg: rgba(var(--c-dark), 1)
 	--c-plugin-swatch-fg: rgba(var(--c-white), 1)
 	--c-plugin-swatch-bg: rgba(var(--c-dark), 1)
+	.plugin-light
+		display: none
+	.plugin-dark
+		display: block
 
 body.dark-mode 
 	+dark-mode
