@@ -1,6 +1,6 @@
 
 .contrast-shape
-	position: absolute
+	position: fixed
 	border-radius: 50%
 	display: block
 
@@ -9,7 +9,8 @@
 	width: 320px
 	height: 320px
 	top: 40px
-	left: -190px
+	left: 50%
+	transform: translate(-140%, 0)
 	z-index: -1
 	animation: float-small 30s infinite ease-in-out
 
@@ -17,38 +18,43 @@
 	background: var(--c-two)
 	width: 1000px
 	height: 1000px
-	bottom: -320px
-	right: -640px
-	z-index: -1
+	top: 120px
+	left: 50%
+	transform: translate(0, 0)
+	z-index: -2
 	animation: float 20s infinite ease-in-out
-	 
 
-@keyframes float
-	0%
-		transform: translateX(0)
-	20%
-		transform: translateX(40px)
+.contrast-shape-interior
+	position: absolute
+	background: var(--c-one)
+	width: 320px
+	height: 320px
+	top: 120px
+	left: 50%
+	transform: translate(50%, 0)
+	z-index: -1
+	animation: float-interior 30s infinite ease-in-out
+
+@keyframes float-interior
+	0%, 80%
+		transform: translate(50%, 0)
+	20%, 60%
+		transform: translate(40%, 40px)
 	40%
-		transform: translateX(-40px)
-	60%
-		transform: translateX(40px)
-	80%
-		transform: translateX(0)
+		transform: translate(50%, 80px)
 
 @keyframes float-small
-	0%
-		transform: translate(0, 0)
-	20%
-		transform: translate(40px, 40px)
+	0%, 80%
+		transform: translate(-140%, 0)
+	20%, 60%
+		transform: translate(-150%, 40px)
 	40%
-		transform: translate(-40px, -40px)
-	60%
-		transform: translate(40px, 40px)
+		transform: translate(-140%, -40px)
+
+@keyframes float
+	0%, 40%
+		transform: translate(0, 0)
+	20%, 60%
+		transform: translate(-10%, 40px)
 	80%
 		transform: translate(0, 0)
-
-
-// .contrast-shape-circle-small--interior
-// 	top: 320px !important
-// 	right: -120px !important
-// 	left: 0 !important
