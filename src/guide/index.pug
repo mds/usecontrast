@@ -20,7 +20,7 @@ block content
 			//- SUMMARY
 			//- ------------------------------------------------------------------------
 			section
-				a.line-item.line-item--subtitle(id="#" href="#summary") #[h2 Summary] 
+				a.line-item.line-item--subtitle(id="summary" href="#summary") #[h2 Summary] 
 				.interior-grid
 					.interior-grid-item
 						p Fail
@@ -38,7 +38,7 @@ block content
 			//- SCORE & RATIO
 			//- ------------------------------------------------------------------------
 			section
-				a.line-item.line-item--subtitle(id="#score&ratio" href="#score&ratio") #[h2 Score &amp; Ratio] 
+				a.line-item.line-item--subtitle(id="score&ratio" href="#score&ratio") #[h2 Score &amp; Ratio] 
 				.interior-grid
 					.pushed
 						p There is an #[a(href='https://www.w3.org/TR/2008/REC-WCAG20-20081211/#relativeluminancedef') equation provided] by the WCAG  (Web Content Accessibility Guidelines) that determines these two values.
@@ -48,7 +48,7 @@ block content
 			//- FAIL
 			//- ------------------------------------------------------------------------
 			section
-				a.line-item.line-item--mid(id="#fail" href="#fail") #[h2 Fail] #[.value (1.5)]
+				a.line-item.line-item--mid(id="fail" href="#fail") #[h2 Fail] #[.value (1.5)]
 				.pushed
 					p Fail means that your text has a contrast ratio of 2.9 or lower. This does not apply to logos, text in logos, and other decorative elements.
 					p Quite often, failing scores can seem to work nicely within the context of a static design review. But in the context of real world usage, these failing scores can cause problems for the usability of your website or app.
@@ -56,7 +56,7 @@ block content
 			//- AA LARGE
 			//- ------------------------------------------------------------------------
 			section
-				a.line-item.line-item--mid(id="#aa-large" href="#aa-large") #[h2 AA Large] #[.value (3.0)]
+				a.line-item.line-item--mid(id="aa-large" href="#aa-large") #[h2 AA Large] #[.value (3.0)]
 				.pushed
 					p AA Large means that your text has a contrast ratio of at least 3.0. For example, #[code 949494] text on a #[code ffffff] background.
 					p This is the minimum level recommended for standard text and normal vision based on empirical evidence.
@@ -65,7 +65,7 @@ block content
 			//- AA
 			//- ------------------------------------------------------------------------
 			section
-				a.line-item.line-item--mid(id="#aa" href="#aa") #[h2 AA] #[.value (4.5)]
+				a.line-item.line-item--mid(id="aa" href="#aa") #[h2 AA] #[.value (4.5)]
 				.pushed
 					p AA means that your text has a contrast ratio of at least 4.5 or higher. For example, #[code 777777] text on a #[code ffffff] background and vice versa.
 					p There is empirical evidence that visual acuity of 20/40 is associated with a contrast sensitivity loss of roughly 1.5, which is where the 4.5 score is derived.
@@ -73,7 +73,7 @@ block content
 			//- AAA
 			//- ------------------------------------------------------------------------
 			section
-				a.line-item.line-item--mid(id="#aaa" href="#aaa") #[h2 AAA] #[.value (7.0)]
+				a.line-item.line-item--mid(id="aaa" href="#aaa") #[h2 AAA] #[.value (7.0)]
 				.pushed
 					p AAA means that your have a contrast ratio of at least 7.0. For example, #[code ffffff] text on a #[code 595959] background and vice versa.
 					p This score is derived for people with 20/80 vision. This visual acuity score is often not able to be corrected with glasses, etc.
@@ -82,12 +82,12 @@ block content
 			//- Mobile
 			//- ------------------------------------------------------------------------
 			section
-				a.line-item.line-item--mid(id="#mobile" href="#mobile") #[h2 Mobile] 
+				a.line-item.line-item--mid(id="mobile" href="#mobile") #[h2 Mobile] 
 				
 				p What about mobile apps and their big sharp retina screens? There's a #[a(href="https://www.w3.org/TR/mobile-accessibility-mapping/#contrast") working draft] of the WCAG Mobile guidelines that says...
 
 				p "Mobile devices are more likely than desktop/laptop devices to be used in varied environments including outdoors, where glare from the sun or other strong lighting sources is more likely. This scenario heightens the importance of use of good contrast for all users and may compound the challenges that users with low vision have accessing content with poor contrast on mobile devices."
-				
+
 				p So while it is probably easier to see lighter text on a high resolution screens in a controlled environment, the use case for mobile is incredibly unpredictable to risk going super light with text. Direct sunlight, dark rooms, and more all significantly affect the display on mobile screens.
 
 				p If you have more unquenched thirst for color and how it can be leveraged in interface design, #[a(href="https://shiftnudge.com") checkout Shift Nudge].
@@ -95,7 +95,7 @@ block content
 			//- MORE
 			//- ------------------------------------------------------------------------
 			section
-				a.line-item.line-item--mid(id="#more" href="#more") #[h2 More] 
+				a.line-item.line-item--mid(id="more" href="#more") #[h2 More] 
 
 				p There's a lot more to accessibility than just color contrast. According to the WCAG, in order to hit a true AAA rating you not only need to meet all AAA color contrast requirements, but also...
 				blockquote
