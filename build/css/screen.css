@@ -391,7 +391,7 @@ section {
 }
 
 .plugin-controls {
-  padding: 8px;
+  padding: 8px 12px;
   display: grid;
   grid-row-gap: 8px;
 }
