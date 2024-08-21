@@ -58,3 +58,11 @@
 		transform: translate(-10%, 40px)
 	80%
 		transform: translate(0, 0)
+
+
+// Add prefers-reduced-motion media query
+@media (prefers-reduced-motion: reduce)
+	.contrast-shape-circle-small,
+	.contrast-shape-circle-big,
+	.contrast-shape-interior
+		animation: none

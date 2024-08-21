@@ -40,7 +40,7 @@ table {
   --c-white: 255,255,255;
   --c-teal: 102,255,204;
   --c-yellow: 255,255,0;
-  --c-pink: 200,30,255;
+  --c-pink: 180,20,240;
   --c-purple: 128,0,255;
   --c-figma-light-border: 240,240,240;
   --c-figma-light-helper-text: 117,117,117;
@@ -526,6 +526,13 @@ section {
   }
   80% {
     transform: translate(0, 0);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .contrast-shape-circle-small,
+  .contrast-shape-circle-big,
+  .contrast-shape-interior {
+    animation: none;
   }
 }
 .interior {
